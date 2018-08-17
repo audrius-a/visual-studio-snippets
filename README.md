@@ -10,7 +10,7 @@ Shortcut: `fact`
 Output:
 ```c#
 [Fact]
-public void MyTestMethod_ShouldReturnValue_WhenValidParameterIsGiven()
+public async Task MyTestMethod_ShouldReturnValue_WhenValidParameterIsGiven()
 {
     // Arrange
 
@@ -27,7 +27,7 @@ Output:
 ```c#
 [Theory]
 [InlineData(1)]
-public void MyTestMethod_ShouldReturnValue_WhenValidParameterIsGiven(int value)
+public async Task MyTestMethod_ShouldReturnValue_WhenValidParameterIsGiven(int value)
 {
     // Arrange
 
