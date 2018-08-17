@@ -3,10 +3,12 @@ Custom Visual Studio code snippets
 
 ## Usage
 
-### Test
+## Test
 
-**xUnit test method with [Fact] attribute**
+### xUnit test method with [Fact] attribute
+
 Shortcut: `fact`
+
 Output:
 ```c#
 [Fact]
@@ -21,8 +23,11 @@ public void MyTestMethod_ShouldReturnValue_WhenValidParameterIsGiven()
 }
 ```
 
-**xUnit test method with [Theory] attribute:**
+
+### xUnit test method with [Theory] attribute:
+
 Shortcut: `theory`
+
 Output:
 ```c#
 [Theory]
