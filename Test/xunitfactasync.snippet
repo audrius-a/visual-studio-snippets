@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>xUnit Async Fact Test Method</Title>
+      <Shortcut>fact</Shortcut>
+      <Description>Code snippet for a xUnit async test method with [Fact] attribute</Description>
+      <Author>Audrius Asadauskas</Author>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>System.Threading.Tasks</Namespace>
+          <Namespace>Xunit</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>methodName</ID>
+          <ToolTip>Replace with the name of method to be tested</ToolTip>
+          <Default>MyTestMethod</Default>
+        </Literal>
+        <Literal>
+          <ID>should</ID>
+          <ToolTip>Replace with the behaviour to be tested</ToolTip>
+          <Default>ShouldReturnValue</Default>
+        </Literal>
+        <Literal>
+          <ID>when</ID>
+          <ToolTip>Replace with the condition to be tested</ToolTip>
+          <Default>WhenValidParameterIsGiven</Default>
+        </Literal>
+        <Literal Editable="false">
+          <ID>Fact</ID>
+          <Function>SimpleTypeName(global::Xunit.Fact)</Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[[$Fact$]
+      public void $methodName$_$should$_$when$()
+      {
+          // Arrange
+          $end$
+
+          // Act
+
+          // Assert
+      }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
